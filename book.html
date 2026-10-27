@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a session | Aeroplume AI Coaching</title>
+    <meta
+      name="description"
+      content="Book a free introductory Session 1 with Aeroplume AI Coaching. First five clients only. No payment on this page."
+    />
+    <link rel="canonical" href="https://aeroplume.net/book.html" />
+    <meta property="og:title" content="Book a session | Aeroplume AI Coaching" />
+    <meta property="og:image" content="https://aeroplume.net/images/og.jpg" />
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="site">
+      <div class="wrap header-inner">
+        <a class="brand" href="/">
+          <img src="/images/logo.svg" alt="" width="34" height="34" />
+          <span>Aeroplume<small>AI coaching</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="/#who">Who it is for</a></li>
+            <li><a href="/#sessions">Sessions</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a class="btn" href="/book.html">Book a free intro</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="kicker">Free introductory session</p>
+          <h1>Session 1 is free for the first five clients.</h1>
+          <p class="lead">
+            You are booking AI foundations only. There is no charge, no card payment, and no obligation to buy Sessions 2 or 3.
+            I am using these first five places to practise and to collect feedback. Please do not send employer-confidential files — we will use dummy or anonymised examples.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap book-layout">
+          <aside class="card">
+            <h2>Intake questions</h2>
+            <p>Cal.com will ask a short set of questions with the booking. Typical ones:</p>
+            <ul>
+              <li>Role / job title</li>
+              <li>Mid-career professional or small business</li>
+              <li>Tools you already use (Excel, Outlook, Word, PowerPoint, other)</li>
+              <li>What you want to get faster at</li>
+              <li>Confirmation that we will only use dummy or anonymised examples</li>
+            </ul>
+            <p class="muted">If the calendar does not load, use <a href="https://cal.com/aeroplume-coaching">cal.com/aeroplume-coaching</a>.</p>
+          </aside>
+          <div class="cal-wrap">
+            <div id="my-cal-inline" style="width: 100%; min-height: 700px"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site">
+      <div class="wrap footer-grid">
+        <p>© <span id="year">2026</span> Charlie Vellacott, trading as Aeroplume AI Coaching. United Kingdom.</p>
+        <p>
+          <a href="/privacy.html">Privacy</a>
+          ·
+          <a href="mailto:hello@aeroplume.net">hello@aeroplume.net</a>
+        </p>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script type="text/javascript">
+      (function (C, A, L) {
+        let p = function (a, ar) {
+          a.q.push(ar);
+        };
+        let d = C.document;
+        C.Cal =
+          C.Cal ||
+          function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () {
+                p(api, arguments);
+              };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
+      })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", { origin: "https://app.cal.com" });
+      Cal("inline", {
+        elementOrSelector: "#my-cal-inline",
+        calLink: "aeroplume-coaching",
+        config: { layout: "month_view", theme: "light" },
+      });
+    </script>
+  </body>
+</html>
